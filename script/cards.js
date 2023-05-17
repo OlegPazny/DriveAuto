@@ -100,6 +100,8 @@ let cards={
     }
 };
 
+let wrapper=document.querySelector('.card-wrapper');
+
 let toArray = Object.values(cards);
 let sortedByYearAsc = [...toArray].sort((a, b) => a.year - b.year);
 let sortedByPriceAsc = [...toArray].sort((a, b) => a.price - b.price);
@@ -129,8 +131,8 @@ let cardsSortedByRunDesc = {
 }
 
 function createCards(){
-    let wrapper=document.querySelector('.card-wrapper');
     wrapper.innerHTML= "";
+
     for(let key in elems){
         let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+'$</p><a href="#"><p>Просмотр автомобиля</p></a></div></div>';
         wrapper.innerHTML+= content;
@@ -138,6 +140,10 @@ function createCards(){
 }
 
 let elems={};
+
+elems=cardsSortedByPriceAsc;
+createCards();
+
 function getValue(selectObject) {
     value = selectObject.value;
     if(value=="price_asc"){
@@ -157,41 +163,17 @@ function getValue(selectObject) {
     }
     if(value=="run_desc"){
         elems=cardsSortedByRunDesc;
+        createCards();
         console.log(elems);
     }
     if(value=="year_asc"){
         elems=cardsSortedByYearAsc;
+        createCards();
         console.log(elems);
     }
     if(value=="year_desc"){
         elems=cardsSortedByYearDesc;
+        createCards();
         console.log(elems);
     }
 };
-
-
-
-
-// for(let key in elems){
-//     wrapper.document.write('<div class="card" id="'+elems[key].id+'">');
-//     wrapper.document.write('<img src="'+elems[key].img+'">');
-//     wrapper.document.write('<div class="info-block">');
-//     wrapper.document.write('<div class="row">');
-//     wrapper.document.write('<div class="name-model">');
-//     wrapper.document.write('<p>'+elems[key].brand+'</p>');
-//     wrapper.document.write('<p>'+elems[key].model+'</p>');
-//     wrapper.document.write('</div>');
-//     wrapper.document.write('<p>'+elems[key].year+'</p>');
-//     wrapper.document.write('</div>');
-//     wrapper.document.write('<div class="row">');
-//     wrapper.document.write('<p>'+elems[key].run+' км</p>');
-//     wrapper.document.write('<p>'+elems[key].engine+'</p>');
-//     wrapper.document.write('<p>'+elems[key].body+'</p>');
-//     wrapper.document.write('</div>');
-//     wrapper.document.write('</div>');
-//     wrapper.document.write('<div class="bottom-row">');
-//     wrapper.document.write('<p class="price">'+elems[key].price+'$</p>');
-//     wrapper.document.write('<a href="#"><p>Просмотр автомобиля</p></a>');
-//     wrapper.document.write('</div>');
-//     wrapper.document.write('</div>');
-// }
