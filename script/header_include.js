@@ -1,4 +1,4 @@
-if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"){
+if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"){
     console.log(document.location.href);    
     document.write('<header>');
     document.write('        <div class="contact-header">');
