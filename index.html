@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>index</title>
+</head>
+<body>
+    <script src="script/header_include.js"></script>
+    
+    <section class="slider-container">
+        <button class="button slider-prev"><</button>
+        <div class="slider">
+            <div class="slider-line">
+                <div class="slider-elem">
+                    <div class="slide">
+                        <div class="slide-info">
+                            <p class="slide-head">ЧИСТОТА И ОПРЯТНОСТЬ</p>
+                            <p class="slide-txt">Мойка. Чистка. Полировка.</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="img/wash_slider.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-elem">
+                    <div class="slide">
+                        <div class="slide-info">
+                            <p class="slide-head">НА УЛИЦЕ ЖАРА?</p>
+                            <p class="slide-txt">Заправка, ремонт, установка кондиционера.</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="img/ac_slider.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-elem">
+                    <div class="slide">
+                        <div class="slide-info">
+                            <p class="slide-head">АВТОМОБИЛИ С ПРОБЕГОМ</p>
+                            <p class="slide-txt">Год обслуживания в подарок!</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="img/auto_slider.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button slider-next">></button>
+    </section>
+    <section class="nav-menu">
+        <div class="nav-columns">
+            <div class="nav-row">
+                <div class="nav-item">
+                    <img class="nav-img" src="img/service_icon.svg">
+                    <div class="nav-info">
+                        <p>Запись на обслуживание</p>
+                        <p>Подходит срок ТО? Запишитесь на обслуживание у нас</p>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <img class="nav-img" src="img/tradein_icon.svg">
+                    <div class="nav-info">
+                        <p>Заявка на Trade-In</p>
+                        <p>Узнать ориентировочную стоимость своего автомобиля</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-row">
+                <div class="nav-item">
+                    <img class="nav-img" src="img/insurance_icon.svg">
+                    <div class="nav-info">
+                        <p>Стоимость страховки</p>
+                        <p>Застрахуйте свой автомобиль и кошелек</p>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <img class="nav-img" src="img/callback_icon.svg">
+                    <div class="nav-info">
+                        <p>Остались вопросы?</p>
+                        <p>Заполните форму обратной связи ниже</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-txt">
+                    <p>ОСТАЛИСЬ ВОПРОСЫ?</p>
+                    <p>Оставьте свои контакты, и мы свяжемся с вами, чтобы подобрать подходящее предложение</p>
+                </div>
+                <img class="contact-img" src="img/contact_img.png">
+            </div>
+            <div class="contact-form">
+                <form class="form">
+                    <label>Имя *</label>
+                    <input type="text" name="name" required>
+                    <label>Телефон *</label>
+                    <input type="text" name="phone" required>
+                    <label>Сообщение</label>
+                    <input type="text" name="message" class="message-box">
+                    <!-- <div class="check-block">
+                        <input type="checkbox" name="check" id="checkbox">
+                        <label>Я согласен на передачу и обработку персональных данных и получение рекламно-информационных рассылок</label>
+                    </div> -->
+                    <div class="checkbox-rect">
+                        <input type="checkbox" id="checkbox-rect1" name="check" required>
+                        <label for="checkbox-rect1">Я согласен на передачу и обработку персональных данных и получение рекламно-информационных рассылок</label>
+                    </div>
+                
+                    <input type="submit" class="submit-btn" value="Отправить заявку">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script/footer_include.js"></script>
+    <script src="script/slider.js"></script>
+</body>
+</html>
