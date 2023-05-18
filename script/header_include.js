@@ -31,8 +31,11 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <p><a href="partials/finance_programs.html">Финансовые программы</a></p>');
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
+    document.write('                    <div class="page">');
+    document.write('                        <p class="about-btn"><a href="#">Контакты</a></p>');
+    document.write('                        <div class="underline"></div>');
+    document.write('                    </div>');
     document.write('                </div>');
-    document.write('                <p class="about-btn">Об автосалоне</p>');
     document.write('            </div>');
     document.write('        </nav>');
     document.write('    </header>');
@@ -70,8 +73,12 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <p><a href="finance_programs.html">Финансовые программы</a></p>');
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
+    document.write('                    <div class="page">');
+    document.write('                        <p class="about-btn"><a href="#">Контакты</a></p>');
+    document.write('                        <div class="underline"></div>');
+    document.write('                    </div>');
     document.write('                </div>');
-    document.write('                <p class="about-btn">Об автосалоне</p>');
+
     document.write('            </div>');
     document.write('        </nav>');
     document.write('    </header>');

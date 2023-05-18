@@ -2,7 +2,7 @@ let nav=document.querySelector('.pages');
 let btn=nav.children;
 let underline=document.querySelectorAll('.underline');
 
-for(let i=0; i<3; i++){
+for(let i=0; i<4; i++){
     btn[i].addEventListener('mouseover', (event)=>{
         // underline[i].style.setProperty('visibility','visible');
         underline[i].style.setProperty('width','100%');

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/support.css">
+    <title>support</title>
+</head>
+<body>
+    <script src="../script/header_include.js"></script>
+    <div class="breadcrumbs">
+        <p><a href="../index.html">Главная</a> > <a href="support.html">Служба клиентской поддержки</a></p>
+    </div>
+    <section>
+        <p class="head">Служба клиентской поддержки</p>
+        <div class="form-container">
+            <p class="intro">
+                Оставьте свои контакты и мы свяжемся с Вами!
+            </p>
+            <div class="select">
+                <div class="select-btn">
+                    <img src="../img/support_phone.svg">
+                    <p>По телефону</p>
+                    <input type="radio" id="byPhone" name="contact" value="byPhone" checked="checked" class="radio">
+                </div>
+                <div class="select-btn">
+                    <img src="../img/support_mail.svg">
+                    <p>По e-mail</p>
+                    <input type="radio" id="byMail" name="contact" value="byMail" class="radio">
+                </div>
+            </div>
+            <form>
+                <div class="input-row">
+                    <div class="input-block">
+                        <label>Имя *</label>
+                        <input type="text" class="field">
+                    </div>
+                    <div class="input-block">
+                        <label>Телефон *</label>
+                        <input type="text" class="field">
+                    </div>
+                </div>
+                <label>Тема обращения *</label>
+                <input type="text" class="field">
+                <label>Комментарий *</label>
+                <input type="text" class="field comment">
+            </form>
+            <div class="button">
+                <p>Свяжитесь со мной</p>
+            </div>
+        </div>
+    </section>
+    <script src="../script/footer_include.js"></script>
+</body>
+</html>
