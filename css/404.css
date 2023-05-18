@@ -10,11 +10,11 @@ section p{
     font-weight: bold;
     margin-top:2%;
 }
-a{
+section p a{
     color:orange;
     transition: 0.5s ease-in-out;
 }
-a:hover{
+section p a:hover{
     color:rgb(167, 109, 0);
     transition: 0.5s ease-in-out;
 }
