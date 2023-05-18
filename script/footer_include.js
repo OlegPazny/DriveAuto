@@ -27,7 +27,7 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                <div class="main-links">');
     document.write('                    <a href="#"><p>Специальные предложения</p></a>');
     document.write('                    <a href="#"><p>Записаться на обслуживание</p></a>');
-    document.write('                    <a href="#"><p>Записаться на ремонт</p></a>');
+    document.write('                    <a href="partials/404.html"><p>Записаться на ремонт</p></a>');
     document.write('                    <a href="partials/support.html"><p>Служба клиентской поддержки</p></a>');
     document.write('                </div>');
     document.write('            </div>');
@@ -81,7 +81,7 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                <div class="main-links">');
     document.write('                    <a href="#"><p>Специальные предложения</p></a>');
     document.write('                    <a href="#"><p>Записаться на обслуживание</p></a>');
-    document.write('                    <a href="#"><p>Записаться на ремонт</p></a>');
+    document.write('                    <a href="404.html"><p>Записаться на ремонт</p></a>');
     document.write('                    <a href="support.html"><p>Служба клиентской поддержки</p></a>');
     document.write('                </div>');
     document.write('            </div>');
