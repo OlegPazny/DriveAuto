@@ -24,12 +24,12 @@
                 <div class="select-btn">
                     <img src="../img/support_phone.svg">
                     <p>По телефону</p>
-                    <input type="radio" id="byPhone" name="contact" value="byPhone" checked="checked" class="radio">
+                    <input type="radio" id="radio" name="contact" value="byPhone" checked="checked" class="radio" onchange="change()">
                 </div>
                 <div class="select-btn">
                     <img src="../img/support_mail.svg">
                     <p>По e-mail</p>
-                    <input type="radio" id="byMail" name="contact" value="byMail" class="radio">
+                    <input type="radio" id="radio" name="contact" value="byMail" class="radio" onchange="change()">
                 </div>
             </div>
             <form>
@@ -39,7 +39,7 @@
                         <input type="text" class="field">
                     </div>
                     <div class="input-block">
-                        <label>Телефон *</label>
+                        <label class="way"></label>
                         <input type="text" class="field">
                     </div>
                 </div>
@@ -53,6 +53,7 @@
             </div>
         </div>
     </section>
+    <script src="../script/support.js"></script>
     <script src="../script/footer_include.js"></script>
 </body>
 </html>
