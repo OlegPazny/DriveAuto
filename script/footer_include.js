@@ -1,4 +1,4 @@
-if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"){
+if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"||document.location.href=="http://127.0.0.1:5500/index.html#"){
     document.write('<footer>');
     document.write('        <div class="footer-container">');
     document.write('            <div class="links-container">');
@@ -20,8 +20,8 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <a href="#"><p>Автосалон</p></a>');
     document.write('                        <a href="#"><p>Сотрудники</p></a>');
     document.write('                        <a href="#"><p>Новости</p></a>');
-    document.write('                        <a href="#"><p>Контакты</p></a>');
-    document.write('                        <a href="#"><p>Как добраться?</p></a>');
+    document.write('                        <a href="partials/about.html"><p>Контакты</p></a>');
+    document.write('                        <a href="https://yandex.ru/maps/?rtext=~53.869147, 27.530534"><p>Как добраться?</p></a>');
     document.write('                    </div>');
     document.write('                </div>');
     document.write('                <div class="main-links">');
@@ -74,8 +74,8 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <a href="#"><p>Автосалон</p></a>');
     document.write('                        <a href="#"><p>Сотрудники</p></a>');
     document.write('                        <a href="#"><p>Новости</p></a>');
-    document.write('                        <a href="#"><p>Контакты</p></a>');
-    document.write('                        <a href="#"><p>Как добраться?</p></a>');
+    document.write('                        <a href="about.html"><p>Контакты</p></a>');
+    document.write('                        <a href="https://yandex.ru/maps/?rtext=~53.869147, 27.530534"><p>Как добраться?</p></a>');
     document.write('                    </div>');
     document.write('                </div>');
     document.write('                <div class="main-links">');

@@ -1,17 +1,17 @@
-if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"){
+if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"||document.location.href=="http://127.0.0.1:5500/index.html#"){
     console.log(document.location.href);    
     document.write('<header>');
     document.write('        <div class="contact-header">');
     document.write('            <div class="contact-header-container">');
     document.write('                <div class="adress">');
     document.write('                    <img src="img/location.svg">');
-    document.write('                    <a href="#"><p>г. Минск, ул. Савицкого, 3</p></a>');
+    document.write('                    <a href="https://yandex.ru/maps/?rtext=~53.869147, 27.530534"><p>г. Минск, ул. Савицкого, 3</p></a>');
     document.write('                </div>');
     document.write('                <div class="num">');
     document.write('                    <p>тел. +375 (29) 865 79 68</p>');
     document.write('                </div>');
     document.write('                <div class="callback-btn">');
-    document.write('                    <a href="#"><p>Заказать обратный звонок</p></a>');
+    document.write('                    <a href="partials/support.html"><p>Заказать обратный звонок</p></a>');
     document.write('                </div>');
     document.write('            </div>');
     document.write('        </div>');
@@ -32,7 +32,7 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
     document.write('                    <div class="page">');
-    document.write('                        <p class="about-btn"><a href="#">Контакты</a></p>');
+    document.write('                        <p class="about-btn"><a href="partials/about.html">Контакты</a></p>');
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
     document.write('                </div>');
@@ -47,13 +47,13 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('            <div class="contact-header-container">');
     document.write('                <div class="adress">');
     document.write('                    <img src="../img/location.svg">');
-    document.write('                    <a href="#"><p>г. Минск, ул. Савицкого, 3</p></a>');
+    document.write('                    <a href="https://yandex.ru/maps/?rtext=~53.869147, 27.530534"><p>г. Минск, ул. Савицкого, 3</p></a>');
     document.write('                </div>');
     document.write('                <div class="num">');
     document.write('                    <p>тел. +375 (29) 865 79 68</p>');
     document.write('                </div>');
     document.write('                <div class="callback-btn">');
-    document.write('                    <a href="#"><p>Заказать обратный звонок</p></a>');
+    document.write('                    <a href="support.html"><p>Заказать обратный звонок</p></a>');
     document.write('                </div>');
     document.write('            </div>');
     document.write('        </div>');
@@ -74,7 +74,7 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
     document.write('                    <div class="page">');
-    document.write('                        <p class="about-btn"><a href="#">Контакты</a></p>');
+    document.write('                        <p class="about-btn"><a href="about.html">Контакты</a></p>');
     document.write('                        <div class="underline"></div>');
     document.write('                    </div>');
     document.write('                </div>');
