@@ -101,9 +101,9 @@
             <div class="contact-form">
                 <form class="form">
                     <label>Имя *</label>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" required class="name">
                     <label>Телефон *</label>
-                    <input type="text" name="phone" required>
+                    <input type="text" name="phone" required class="phone">
                     <label>Сообщение</label>
                     <input type="text" name="message" class="message-box">
                     <!-- <div class="check-block">
@@ -111,16 +111,18 @@
                         <label>Я согласен на передачу и обработку персональных данных и получение рекламно-информационных рассылок</label>
                     </div> -->
                     <div class="checkbox-rect">
-                        <input type="checkbox" id="checkbox-rect1" name="check" required>
+                        <input type="checkbox" id="checkbox-rect1" name="check" required class="check">
                         <label for="checkbox-rect1">Я согласен на передачу и обработку персональных данных и получение рекламно-информационных рассылок</label>
                     </div>
                 
-                    <input type="submit" class="submit-btn" value="Отправить заявку">
+                    <div class="submit-btn" onclick="sendInfo()">
+                        <p>Свяжитесь со мной</p>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
-    <script src="script/index_form.js"></script>
+    <script src="script/form_index.js"></script>
     <script src="script/footer_include.js"></script>
     <script src="script/slider.js"></script>
 </body>

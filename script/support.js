@@ -34,8 +34,19 @@ function change(){
 }
 
 function sendInfo(){
-    console.log("Имя: "+user_name.value);
-    console.log(way_name+": "+way.value);
-    console.log("Тема: "+topic.value);
-    console.log("Сообщение: "+comment.value);
+    if(user_name.value!=""&&topic.value!=""&&comment.value!=""){
+        console.log("Имя: "+user_name.value);
+        console.log(way_name+": "+way.value);
+        console.log("Тема: "+topic.value);
+        console.log("Сообщение: "+comment.value);
+
+        user_name.value="";
+        topic.value="";
+        way.value="";
+        comment.value="";
+
+        return false;
+    }else{
+        console.log("Заполните поля корректно");
+    }
 }
