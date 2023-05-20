@@ -36,19 +36,19 @@
                 <div class="input-row">
                     <div class="input-block">
                         <label>Имя *</label>
-                        <input type="text" class="field">
+                        <input type="text" class="field name" required>
                     </div>
                     <div class="input-block">
                         <label class="way"></label>
-                        <input type="text" class="field">
+                        <input type="text" class="field way_field" required>
                     </div>
                 </div>
                 <label>Тема обращения *</label>
-                <input type="text" class="field">
+                <input type="text" class="field topic" required>
                 <label>Комментарий *</label>
-                <input type="text" class="field comment">
+                <input type="text" class="field comment" required>
             </form>
-            <div class="button">
+            <div class="button" onclick="sendInfo()">
                 <p>Свяжитесь со мной</p>
             </div>
         </div>
