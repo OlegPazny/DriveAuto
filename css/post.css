@@ -1,0 +1,136 @@
+section{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom:5%;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+.post-image{
+    width:100%;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.info-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.info-block{
+    display:flex;
+    flex-direction: column;
+}
+.price{
+    font-size: 48px;
+    font-weight: bold;
+}
+.info{
+    font-size: 20px;
+}
+.buy-btn{
+    background-color: #3AAFA9;
+    border:1px solid #329f99;
+    border-radius: 5px;
+    width:33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.buy-btn:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ffffff;
+}
+.buy-btn:hover p{
+    color:#329f99;
+    transition: 0.5s ease-in-out;
+}
+.buy-btn p{
+    font-size: 20px;
+    color:#ffffff;
+    transition: 0.5s ease-in-out;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+    background-color: #DEF2F1;
+    border-radius: 5px;
+    width:50%;
+    padding:2% 3%;
+    margin-top:3%
+}
+.details-head{
+    font-size:20px;
+    font-weight: bold;
+    margin-bottom:2%;
+    margin-left:-2%;
+}
+.details-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.details-column{
+    display: flex;
+    flex-direction: column;
+}
+.details-column p{
+    font-size: 18px;
+    font-weight: light;
+    margin-bottom: 5%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:5%;
+}
+.contact-info-container{
+    display:flex;
+    flex-direction: column;
+}
+.contact-info-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20%;
+}
+.block-head{
+    font-size: 28px;
+    margin-bottom: 8%;
+}
+.contact-info{
+    font-size:18px;
+    margin-bottom: 8%;
+    font-weight: lighter;
+}
+.link-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-block a{
+    text-decoration: underline;
+    font-size: 18px;
+    margin-right:5%;
+}
+.link-block img{
+    width:10%;
+}
+.map-container{
+    width:90%;
+    height:50%;
+    display: flex;
+    justify-content: flex-end;
+}
