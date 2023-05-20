@@ -141,8 +141,18 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
             let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+' р.</p><a href="post.html"><p>Просмотр автомобиля</p></a></div></div>';
             wrapper.innerHTML+= content;
 
+            localStorage.removeItem('card');
             localStorage.setItem('card',  JSON.stringify(elems));
         }
+
+        let card=document.querySelectorAll('.card');
+
+        for (i = 0; i < card.length; i++) {
+        card[i].addEventListener('click', function () {
+            let id=this.id;
+            localStorage.setItem('id', id);
+        });
+    }
     }
     
     let elems={};
@@ -183,15 +193,6 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
             console.log(elems);
         }
     };
-
-    let card=document.querySelectorAll('.card');
-
-    for (i = 0; i < card.length; i++) {
-        card[i].addEventListener('click', function () {
-            let id=this.id;
-            localStorage.setItem('id', id);
-        });
-    }
 }else if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/partials/in_stock_specials.html"||document.location.href=="http://127.0.0.1:5500/partials/in_stock_specials.html"){
     let cards={
         "0":{
