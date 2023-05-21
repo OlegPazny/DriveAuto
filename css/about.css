@@ -64,3 +64,42 @@ section{
     display: flex;
     justify-content: space-around;
 }
+
+@media (max-width:412px){
+    .head{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    section{
+        margin-left:2%;
+        margin-right: 2%;
+        margin-top:5%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .block-head{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom:4%;
+    }
+    .info{
+        font-size:12px;
+        margin-bottom: 2%;
+    }
+    .info-block{
+        margin-bottom:8%;
+    }
+    .link-block{
+        justify-content: unset;
+    }
+    .link-block a{
+        font-size: 12px;
+    }
+    .link-block img{
+        width:4%;
+    }
+    .map-container{
+        align-self: center;
+    }
+}
