@@ -14,7 +14,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "1":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"2001",
             "run":"320070",
             "engine":"Дизель",
             "body":"Седан",
@@ -25,7 +25,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "2":{
             "brand":"Opel",
             "model":"Signum",
-            "year":"2002",
+            "year":"1995",
             "run":"45632",
             "engine":"Дизель",
             "body":"Седан",
@@ -36,7 +36,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "3":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"2000",
             "run":"320",
             "engine":"Дизель",
             "body":"Седан",
@@ -47,7 +47,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "4":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"1986",
             "run":"24000",
             "engine":"Дизель",
             "body":"Седан",
@@ -58,7 +58,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "5":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"2010",
             "run":"45000",
             "engine":"Дизель",
             "body":"Седан",
@@ -69,7 +69,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "6":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"1998",
             "run":"85690",
             "engine":"Дизель",
             "body":"Седан",
@@ -80,7 +80,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "7":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"1989",
             "run":"32000",
             "engine":"Дизель",
             "body":"Седан",
@@ -91,7 +91,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         "8":{
             "brand":"Opel",
             "model":"Vectra",
-            "year":"2002",
+            "year":"2011",
             "run":"320008",
             "engine":"Дизель",
             "body":"Седан",
@@ -138,8 +138,18 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         wrapper.innerHTML= "";
     
         for(let key in elems){
-            let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+' р.</p><a href="post.html"><p>Просмотр автомобиля</p></a></div></div>';
+            elems[key].id=key;
+            let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+key+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+' р.</p><a href="post.html"><p>Просмотр автомобиля</p></a></div></div>';
             wrapper.innerHTML+= content;
+
+            let card=document.querySelectorAll('.card');
+    
+            for (i = 0; i < card.length; i++) {
+                card[i].addEventListener('click', function () {
+                    let id=this.id;
+                    localStorage.setItem('id', id);
+                });
+            }
         }
     }
     
@@ -153,43 +163,49 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
         if(value=="price_asc"){
             elems=cardsSortedByPriceAsc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
         if(value=="price_desc"){
             elems=cardsSortedByPriceDesc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
         if(value=="run_asc"){
             elems=cardsSortedByRunAsc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
         if(value=="run_desc"){
             elems=cardsSortedByRunDesc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
         if(value=="year_asc"){
             elems=cardsSortedByYearAsc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
         if(value=="year_desc"){
             elems=cardsSortedByYearDesc;
             createCards();
+            localStorage.setItem('card',  JSON.stringify(elems));
             console.log(elems);
         }
     };
 
-    let card=document.querySelectorAll('.card');
-    localStorage.setItem('card',  JSON.stringify(cards));
-    for (i = 0; i < card.length; i++) {
-        card[i].addEventListener('click', function () {
-            let id=this.id;
-            localStorage.setItem('id', id);
-        });
-    }
+    // let card=document.querySelectorAll('.card');
+    
+    // for (i = 0; i < card.length; i++) {
+    //     card[i].addEventListener('click', function () {
+    //         let id=this.id;
+    //         localStorage.setItem('id', id);
+    //     });
+    // }
 }else if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/partials/in_stock_specials.html"||document.location.href=="http://127.0.0.1:5500/partials/in_stock_specials.html"){
     let cards={
         "0":{

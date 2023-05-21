@@ -1,6 +1,8 @@
 let car_cards=JSON.parse(localStorage.getItem('card'));
 let id_card=localStorage.getItem('id');
+console.log(id_card);
 console.log(car_cards);
+
 let head=document.querySelector('.name');
 let img=document.querySelector('.post-image');
 let price=document.querySelector('.price');
