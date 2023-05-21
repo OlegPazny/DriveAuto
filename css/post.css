@@ -134,3 +134,62 @@ section{
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width:412px){
+    section{
+        margin-left:2%;
+        margin-right:2%;
+    }
+    .name{
+        font-size:24px;
+    }
+    .price{
+        font-size: 28px;
+    }
+    .info{
+        font-size: 10px;
+    }
+    .buy-btn{
+
+    }
+    .buy-btn p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .details{
+        width:94%;
+    }
+    .details-head{
+        font-size: 14px;
+    }
+    .details-column p{
+        font-size: 12px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .block-head{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom:4%;
+    }
+    .contact-info{
+        font-size:12px;
+        margin-bottom: 2%;
+    }
+    .contact-info-block{
+        margin-bottom:8%;
+    }
+    .link-block{
+        justify-content: unset;
+    }
+    .link-block a{
+        font-size: 12px;
+    }
+    .link-block img{
+        width:4%;
+    }
+    .map-container{
+        align-self: center;
+    }
+}

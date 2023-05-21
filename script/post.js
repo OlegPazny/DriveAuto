@@ -16,8 +16,8 @@ head.innerHTML=car_cards[id_card].brand+" "+car_cards[id_card].model+", "+car_ca
 img.src=car_cards[id_card].img;
 price.innerHTML=car_cards[id_card].price+" р.";
 info.innerHTML=car_cards[id_card].year+" г."+" · "+car_cards[id_card].run+" км · DriveAuto · +375 (29) 865-79-68";
-year.innerHTML=car_cards[id_card].year+" г.";
-run.innerHTML=car_cards[id_card].run+" км";
-engine.innerHTML=car_cards[id_card].engine;
-body.innerHTML=car_cards[id_card].body;
+year.innerHTML="Год: "+car_cards[id_card].year+" г.";
+run.innerHTML="Пробег: "+car_cards[id_card].run+" км";
+engine.innerHTML="Двигатель: "+car_cards[id_card].engine;
+body.innerHTML="Кузов: "+car_cards[id_card].body;
 
