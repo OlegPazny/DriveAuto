@@ -359,7 +359,7 @@ input{
     }
     .nav-row{
         flex-direction: column;
-        align-content: center;
+        align-items: center;
         margin-bottom: 0;
     }
     .nav-menu{
@@ -382,11 +382,18 @@ input{
         font-size: 10px;
         letter-spacing: 0;
     }
+    .nav-row .nav-item:nth-child(1) {
+        margin-right: 0;
+    }
 
 
     .contact-container{
         flex-direction: column;
         justify-content: center;
+    }
+    .contact-section{
+        padding-left:8%;
+        padding-right: 8%;
     }
     .contact-img{
         display: none;
@@ -407,7 +414,9 @@ input{
         font-weight:normal;
     }
     .contact-form{
-        width:100%;
+        width:80%;
+        padding:10%;
+        margin-bottom: -5%;
     }
 }
 
