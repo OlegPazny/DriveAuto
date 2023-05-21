@@ -115,3 +115,42 @@ label{
     color:#ffffff;
     transition: 0.5s ease-in-out;
 }
+
+@media (max-width:412px){
+    section{
+        margin-right:2%;
+        margin-left:2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head{
+        margin-top:5%;
+        margin-bottom: 2%;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .form-container{
+        width:95%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+    }
+    .intro{
+        font-size: 16px;
+    }
+    .select-btn img{
+        width:20px;
+    }
+    input[type=radio]{
+        width:10px;
+    }
+    .select-btn p{
+        font-size: 14px;
+    }
+    .button{
+        width:73%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
