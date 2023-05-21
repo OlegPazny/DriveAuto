@@ -45,7 +45,8 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('    </header>');
     document.write('    <script src="script/underline_menu.js"></script>');
 }else{
-    console.log(document.location.href);  
+    console.log(document.location.href);
+    document.write('<script defer src="../script/burger.js"></script>');  
     document.write('<header>');
     document.write('        <div class="contact-header">');
     document.write('            <div class="contact-header-container">');
@@ -63,6 +64,9 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('        </div>');
     document.write('        <nav class="nav">');
     document.write('            <div class="nav-container">');
+    document.write('                <button class="header__burger-btn" id="burger">');
+    document.write('                    <span></span><span></span><span></span>');
+    document.write('                </button>');
     document.write('                <a href="../index.html"><div class="logo"></div></a>');
     document.write('                <div class="pages">');
     document.write('                    <div class="page">');
