@@ -1,5 +1,6 @@
 if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%B8%D0%92%D0%98/%D0%9A%D0%9F/%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0/index.html"||document.location.href=="http://127.0.0.1:5500/index.html"||document.location.href=="https://olegpazny.github.io/DriveAuto/"||document.location.href=="http://127.0.0.1:5500/index.html#"){
-    console.log(document.location.href);    
+    console.log(document.location.href);
+    document.write('<script defer src="script/burger.js"></script>');
     document.write('<header>');
     document.write('        <div class="contact-header">');
     document.write('            <div class="contact-header-container">');
@@ -17,6 +18,9 @@ if(document.location.href=="file:///D:/%D0%91%D0%93%D0%A2%D0%A3/%D0%94%D0%AD%D0%
     document.write('        </div>');
     document.write('        <nav class="nav">');
     document.write('            <div class="nav-container">');
+    document.write('                <button class="header__burger-btn" id="burger">');
+    document.write('                    <span></span><span></span><span></span>');
+    document.write('                </button>');
     document.write('                <a href="index.html"><div class="logo"></div></a>');
     document.write('                <div class="pages">');
     document.write('                    <div class="page">');
