@@ -138,3 +138,21 @@ body{
     color:#a2a2a2;
     font-weight: bold;
 }
+
+@media (max-width:412px){
+    .card-section{
+        align-items: center;
+    }
+    .head{
+        margin-top:15px;
+        font-size:24px;
+        font-weight: normal;
+    }
+    .sort-block{
+        width:100%;
+        margin-bottom: 15px;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+}
