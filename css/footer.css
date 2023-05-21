@@ -149,3 +149,39 @@ footer{
     font-weight: lighter;
     margin-top:2%;
 }
+
+@media (max-width:412px){
+    .footer-container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .links-container{
+        flex-direction: row;
+    }
+    .links-row{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .link-column a{
+        display: none;
+    }
+    .link-head{
+        font-size: 16px;
+        margin-bottom: 3%;
+    }
+    .contacts-container{
+        flex-direction: column;
+    }
+    .contact-block p:nth-child(2){
+        font-size: 14px;
+    }
+    .contacts-info{
+        width:100%;
+    }
+    .social-media{
+        margin-top:5%;
+    }
+    footer{
+        padding-bottom: 15%;
+    }
+}
