@@ -139,7 +139,7 @@ if(document.location.href=="http://127.0.0.1:5500/partials/in_stock.html"||docum
     
         for(let key in elems){
             elems[key].id=key;
-            let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+key+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+' р.</p><a href="post.html"><p>Просмотр автомобиля</p></a></div></div>';
+            let content = '<div class="card" id="'+elems[key].id+'"><img src="'+elems[key].img+'"><div class="info-block"><div class="row"><div class="name-model"><p>'+elems[key].brand+'</p><p>'+elems[key].model+'</p></div><p>'+elems[key].year+'</p></div><div class="row"><p>'+elems[key].run+' км</p><p>'+elems[key].engine+'</p><p>'+elems[key].body+'</p></div></div><div class="bottom-row"><p>'+elems[key].price+' р.</p><a href="post.html"><p>Просмотр автомобиля</p></a></div></div>';
             wrapper.innerHTML+= content;
 
             let card=document.querySelectorAll('.card');

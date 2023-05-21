@@ -71,3 +71,22 @@ section{
 .program img{
     width:100%;
 }
+
+@media (max-width:412px){
+    .head{
+        margin-top:5%;
+        font-weight: bold;
+        font-size:20px;
+    }
+    .program a{
+        margin-top:5%;
+    }
+    .button{
+        padding:5px 20px;
+    }
+    .button p{
+        font-size:14px;
+        font-weight: bold;
+
+    }
+}
